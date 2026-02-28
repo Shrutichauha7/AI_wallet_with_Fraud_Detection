@@ -3,19 +3,37 @@ import numpy as np
 
 # Load model
 model = XGBClassifier()
-model.load_model(r"C:\Users\Lenovo\PycharmProjects\AI_digital_wallet\app\xgb_fraud_model.json")
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, r"C:\Users\Lenovo\PycharmProjects\AI_wallet_with_Fraud_Detection\app\xgb_fraud_model.json")
+
+model.load_model(model_path)
+
+EXPECTED_FEATURES = 30
 
 def predict_fraud(features: list):
-    if len(features) != 31:
-        raise ValueError("Expected 31 features")
 
-    data = np.array(features).reshape(1, -1)
-    data = scaler.transform(data)  # if scaling used
+    if len(features) != EXPECTED_FEATURES:
+        raise ValueError(f"Expected {EXPECTED_FEATURES} features (V1–V28)")
+
+    data = np.array(features, dtype=float).reshape(1, -1)
 
     probability = model.predict_proba(data)[0][1]
-    prediction = int(probability > 0.2)  # better threshold for fraud
+
+    # Lower threshold for fraud detection (better recall)
+    prediction = int(probability > 0.2)
+
+    # Risk categorization
+    if probability > 0.8:
+        risk_level = "HIGH RISK"
+    elif probability > 0.4:
+        risk_level = "MEDIUM RISK"
+    else:
+        risk_level = "LOW RISK"
 
     return {
-        "fraud_probability": float(probability),
-        "is_fraud": prediction
+        "fraud_probability": round(float(probability), 6),
+        "is_fraud": prediction,
+        "risk_level": risk_level
     }
