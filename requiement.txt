@@ -3,4 +3,5 @@ uvicorn
 xgboost
 scikit-learn
 numpy
-pydantic
+streamlit
+requests
