@@ -12,11 +12,11 @@ log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
 
 # Logger setup
-logger = logging.getLogger('fraud_model_building')
+logger = logging.getLogger('model_building')
 logger.setLevel(logging.DEBUG)
 
 console_handler = logging.StreamHandler()
-file_handler = logging.FileHandler(os.path.join(log_dir, 'fraud_model.log'))
+file_handler = logging.FileHandler(os.path.join(log_dir, 'model_building.log'))
 
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)

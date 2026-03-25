@@ -59,3 +59,13 @@
 2026-03-25 17:01:46,796 - DEBUG - Missing values handled
 2026-03-25 17:01:46,823 - DEBUG - Numerical features scaled
 2026-03-25 17:01:48,444 - DEBUG - Processed data saved successfully
+2026-03-25 18:58:37,058 - DEBUG - Data loaded successfully
+2026-03-25 18:58:37,059 - DEBUG - Starting preprocessing
+2026-03-25 18:58:37,101 - DEBUG - Duplicates removed
+2026-03-25 18:58:37,120 - DEBUG - Missing values handled
+2026-03-25 18:58:37,154 - DEBUG - Numerical features scaled
+2026-03-25 18:58:37,162 - DEBUG - Starting preprocessing
+2026-03-25 18:58:37,172 - DEBUG - Duplicates removed
+2026-03-25 18:58:37,232 - DEBUG - Missing values handled
+2026-03-25 18:58:37,286 - DEBUG - Numerical features scaled
+2026-03-25 18:58:38,264 - DEBUG - Processed data saved successfully
