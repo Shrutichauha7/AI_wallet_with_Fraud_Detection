@@ -9,3 +9,13 @@
 2026-03-25 15:29:02,395 - DEBUG - Numerical features scaled
 2026-03-25 15:29:03,279 - DEBUG - Processed data saved successfully
 2026-03-25 16:00:23,915 - ERROR - Pipeline failed: [Errno 2] No such file or directory: './data/raw/train.csv'
+2026-03-25 16:43:20,614 - DEBUG - Data loaded successfully
+2026-03-25 16:43:20,615 - DEBUG - Starting preprocessing
+2026-03-25 16:43:20,660 - DEBUG - Duplicates removed
+2026-03-25 16:43:20,677 - DEBUG - Missing values handled
+2026-03-25 16:43:20,707 - DEBUG - Numerical features scaled
+2026-03-25 16:43:20,713 - DEBUG - Starting preprocessing
+2026-03-25 16:43:20,723 - DEBUG - Duplicates removed
+2026-03-25 16:43:20,730 - DEBUG - Missing values handled
+2026-03-25 16:43:20,741 - DEBUG - Numerical features scaled
+2026-03-25 16:43:22,202 - DEBUG - Processed data saved successfully

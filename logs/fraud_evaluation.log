@@ -1,7 +1,0 @@
-2026-03-25 15:52:36,132 - DEBUG - Model loaded from ./models/xgb_model.pkl
-2026-03-25 15:52:36,176 - DEBUG - Data loaded from ./data/processed/test_processed.csv, shape: (5099, 31)
-2026-03-25 15:52:36,226 - DEBUG - Metrics: {'accuracy': 0.9952931947440674, 'precision': 0.9625, 'recall': 0.7857142857142857, 'f1_score': 0.8651685393258427, 'roc_auc': np.float64(0.9667750123444699)}
-2026-03-25 15:52:36,228 - DEBUG - Confusion Matrix:
-[[4998    3]
- [  21   77]]
-2026-03-25 15:52:46,678 - ERROR - Evaluation pipeline failed: Could not apply stash commit

@@ -5,18 +5,20 @@ import pickle
 import logging
 import yaml
 from xgboost import XGBClassifier
-from sklearn.utils.class_weight import compute_class_weight
 
-# Ensure logs directory exists
+# Create logs directory
 log_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
 
 # Logger setup
-logger = logging.getLogger('fraud_model_building')
+logger = logging.getLogger('model_building')
 logger.setLevel(logging.DEBUG)
 
+if logger.hasHandlers():
+    logger.handlers.clear()
+
 console_handler = logging.StreamHandler()
-file_handler = logging.FileHandler(os.path.join(log_dir, 'fraud_model.log'))
+file_handler = logging.FileHandler(os.path.join(log_dir, 'model_building.log'))
 
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
@@ -25,8 +27,8 @@ file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
+
 def load_params(params_path: str) -> dict:
-    """Load parameters from a YAML file safely."""
     try:
         if not os.path.exists(params_path):
             raise FileNotFoundError(f"{params_path} does not exist")
@@ -34,35 +36,17 @@ def load_params(params_path: str) -> dict:
         with open(params_path, 'r') as file:
             params = yaml.safe_load(file)
 
-        # ✅ Handle empty YAML
         if params is None:
             raise ValueError(f"{params_path} is empty or invalid")
 
-        # ✅ Validate required section
         if 'model_building' not in params:
             raise KeyError("'model_building' key not found in params.yaml")
 
         logger.debug(f"Parameters successfully loaded from {params_path}")
         return params
 
-    except FileNotFoundError as e:
-        logger.error(f"File not found: {e}")
-        raise
-
-    except yaml.YAMLError as e:
-        logger.error(f"YAML parsing error: {e}")
-        raise
-
-    except KeyError as e:
-        logger.error(f"Missing key in YAML: {e}")
-        raise
-
-    except ValueError as e:
-        logger.error(f"Invalid YAML content: {e}")
-        raise
-
     except Exception as e:
-        logger.error(f"Unexpected error: {e}")
+        logger.error(f"Error loading params: {e}")
         raise
 
 
@@ -78,12 +62,8 @@ def load_data(file_path: str) -> pd.DataFrame:
 
 def train_model(X_train, y_train, params):
     try:
-        # Handle class imbalance using scale_pos_weight
-        classes = np.unique(y_train)
-        class_weights = compute_class_weight(class_weight='balanced', classes=classes, y=y_train)
-        weight_dict = dict(zip(classes, class_weights))
-
-        scale_pos_weight = weight_dict[1] / weight_dict[0]
+        # Better way to handle imbalance
+        scale_pos_weight = (y_train == 0).sum() / (y_train == 1).sum()
         logger.debug(f"scale_pos_weight: {scale_pos_weight}")
 
         model = XGBClassifier(
@@ -92,7 +72,6 @@ def train_model(X_train, y_train, params):
             max_depth=params['max_depth'],
             random_state=params['random_state'],
             scale_pos_weight=scale_pos_weight,
-            use_label_encoder=False,
             eval_metric='logloss'
         )
 
@@ -112,7 +91,9 @@ def save_model(model, file_path: str):
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'wb') as f:
             pickle.dump(model, f)
+
         logger.debug(f"Model saved at {file_path}")
+
     except Exception as e:
         logger.error(f"Error saving model: {e}")
         raise
@@ -120,17 +101,17 @@ def save_model(model, file_path: str):
 
 def main():
     try:
-        
         params = load_params('params.yaml')['model_building']
         train_data = load_data('./data/processed/train_processed.csv')
-        
+
         X_train = train_data.drop(columns=['Class']).values
         y_train = train_data['Class'].values
 
-        
         model = train_model(X_train, y_train, params)
-        model_save_path = 'models/model.pkl'
-        save_model(model, 'models/xgb_model.pkl')
+
+        # ✅ Use one consistent path
+        model_save_path = 'models/xgb_model.pkl'
+        save_model(model, model_save_path)
 
     except Exception as e:
         logger.error(f"Pipeline failed: {e}")
