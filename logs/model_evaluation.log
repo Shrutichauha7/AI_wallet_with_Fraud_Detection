@@ -1,8 +1,8 @@
-2026-03-25 17:18:32,643 - DEBUG - Params loaded successfully
-2026-03-25 17:18:32,690 - DEBUG - Model loaded from ./models/xgb_model.pkl
-2026-03-25 17:18:32,734 - DEBUG - Data loaded from ./data/interim/test_processed.csv, shape: (5099, 31)
-2026-03-25 17:18:32,776 - DEBUG - Metrics: {'accuracy': 0.9952931947440674, 'precision': 0.9625, 'recall': 0.7857142857142857, 'f1_score': 0.8651685393258427, 'roc_auc': 0.9667750123444699}
-2026-03-25 17:18:32,778 - DEBUG - Confusion Matrix:
-[[4998    3]
- [  21   77]]
-2026-03-25 17:18:33,422 - DEBUG - Metrics saved at reports/metrics.json
+2026-03-25 19:47:50,101 - DEBUG - Params loaded successfully
+2026-03-25 19:47:50,169 - DEBUG - Model loaded from ./models/xgb_model.pkl
+2026-03-25 19:47:50,234 - DEBUG - Data loaded from ./data/interim/test_processed.csv, shape: (7645, 31)
+2026-03-25 19:47:50,308 - DEBUG - Metrics: {'accuracy': 0.9947678221059516, 'precision': 0.9344262295081968, 'recall': 0.7808219178082192, 'f1_score': 0.8507462686567164, 'roc_auc': 0.9726214636837422}
+2026-03-25 19:47:50,311 - DEBUG - Confusion Matrix:
+[[7491    8]
+ [  32  114]]
+2026-03-25 19:47:50,943 - DEBUG - Metrics saved at reports/metrics.json
