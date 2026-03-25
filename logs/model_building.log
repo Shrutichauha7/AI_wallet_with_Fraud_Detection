@@ -1,0 +1,6 @@
+2026-03-25 15:48:38,729 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 15:48:38,904 - DEBUG - Data loaded from ./data/processed/train_processed.csv, shape: (20376, 31)
+2026-03-25 15:48:38,914 - DEBUG - scale_pos_weight: 52.0625
+2026-03-25 15:48:38,925 - DEBUG - Training XGBoost model...
+2026-03-25 15:48:39,552 - DEBUG - Model training completed
+2026-03-25 15:48:39,557 - DEBUG - Model saved at models/xgb_model.pkl
