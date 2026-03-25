@@ -11,3 +11,28 @@
 2026-03-25 18:58:34,361 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
 2026-03-25 18:58:35,094 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
 2026-03-25 18:58:35,095 - data_ingestion - INFO - Data ingestion process completed successfully
+2026-03-25 19:22:43,320 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-03-25 19:22:43,475 - data_ingestion - DEBUG - Data loaded from C:\practice\Fraud_Detection_Analysis\experiments\creditdata.csv, shape: (25492, 31)
+2026-03-25 19:22:43,476 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
+2026-03-25 19:22:44,187 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2026-03-25 19:22:44,188 - data_ingestion - INFO - Data ingestion process completed successfully
+2026-03-25 19:25:02,722 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-03-25 19:25:02,868 - data_ingestion - DEBUG - Data loaded from C:\practice\Fraud_Detection_Analysis\experiments\creditdata.csv, shape: (25492, 31)
+2026-03-25 19:25:02,873 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
+2026-03-25 19:25:03,616 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2026-03-25 19:25:03,616 - data_ingestion - INFO - Data ingestion process completed successfully
+2026-03-25 19:27:01,142 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-03-25 19:27:01,324 - data_ingestion - DEBUG - Data loaded from C:\practice\Fraud_Detection_Analysis\experiments\creditdata.csv, shape: (25492, 31)
+2026-03-25 19:27:01,326 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
+2026-03-25 19:27:03,031 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2026-03-25 19:27:03,035 - data_ingestion - INFO - Data ingestion process completed successfully
+2026-03-25 19:29:14,498 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-03-25 19:29:14,671 - data_ingestion - DEBUG - Data loaded from C:\practice\Fraud_Detection_Analysis\experiments\creditdata.csv, shape: (25492, 31)
+2026-03-25 19:29:14,673 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
+2026-03-25 19:29:16,140 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2026-03-25 19:29:16,141 - data_ingestion - INFO - Data ingestion process completed successfully
+2026-03-25 19:47:34,824 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-03-25 19:47:35,005 - data_ingestion - DEBUG - Data loaded from C:\practice\Fraud_Detection_Analysis\experiments\creditdata.csv, shape: (25492, 31)
+2026-03-25 19:47:35,007 - data_ingestion - DEBUG - Data preprocessing completed, shape: (25492, 31)
+2026-03-25 19:47:36,505 - data_ingestion - DEBUG - Train and test data saved to ./data\raw
+2026-03-25 19:47:36,506 - data_ingestion - INFO - Data ingestion process completed successfully

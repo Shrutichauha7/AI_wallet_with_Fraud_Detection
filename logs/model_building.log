@@ -16,3 +16,45 @@
 2026-03-25 19:02:29,749 - DEBUG - Training XGBoost model...
 2026-03-25 19:02:30,383 - DEBUG - Model training completed
 2026-03-25 19:02:30,387 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:13:37,935 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:13:38,068 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (19103, 31)
+2026-03-25 19:13:38,073 - DEBUG - scale_pos_weight: 52.0638888888889
+2026-03-25 19:13:38,074 - DEBUG - Training XGBoost model...
+2026-03-25 19:13:38,700 - DEBUG - Model training completed
+2026-03-25 19:13:38,704 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:21:26,065 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:21:26,204 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (20376, 31)
+2026-03-25 19:21:26,219 - DEBUG - scale_pos_weight: 52.0625
+2026-03-25 19:21:26,219 - DEBUG - Training XGBoost model...
+2026-03-25 19:21:26,618 - DEBUG - Model training completed
+2026-03-25 19:21:26,621 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:22:48,841 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:22:48,964 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (20376, 31)
+2026-03-25 19:22:48,968 - DEBUG - scale_pos_weight: 52.0625
+2026-03-25 19:22:48,968 - DEBUG - Training XGBoost model...
+2026-03-25 19:22:49,347 - DEBUG - Model training completed
+2026-03-25 19:22:49,351 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:25:08,811 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:25:08,925 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (20376, 31)
+2026-03-25 19:25:08,931 - DEBUG - scale_pos_weight: 52.0625
+2026-03-25 19:25:08,932 - DEBUG - Training XGBoost model...
+2026-03-25 19:25:09,354 - DEBUG - Model training completed
+2026-03-25 19:25:09,358 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:27:12,386 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:27:12,565 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (20376, 31)
+2026-03-25 19:27:12,573 - DEBUG - scale_pos_weight: 52.0625
+2026-03-25 19:27:12,573 - DEBUG - Training XGBoost model...
+2026-03-25 19:27:13,566 - DEBUG - Model training completed
+2026-03-25 19:27:13,571 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:29:24,629 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:29:24,752 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (17830, 31)
+2026-03-25 19:29:24,755 - DEBUG - scale_pos_weight: 51.9080118694362
+2026-03-25 19:29:24,756 - DEBUG - Training XGBoost model...
+2026-03-25 19:29:25,457 - DEBUG - Model training completed
+2026-03-25 19:29:25,462 - DEBUG - Model saved at models/xgb_model.pkl
+2026-03-25 19:47:44,834 - DEBUG - Parameters successfully loaded from params.yaml
+2026-03-25 19:47:45,005 - DEBUG - Data loaded from ./data/interim/train_processed.csv, shape: (17830, 31)
+2026-03-25 19:47:45,012 - DEBUG - scale_pos_weight: 51.9080118694362
+2026-03-25 19:47:45,013 - DEBUG - Training XGBoost model...
+2026-03-25 19:47:45,894 - DEBUG - Model training completed
+2026-03-25 19:47:45,906 - DEBUG - Model saved at models/xgb_model.pkl

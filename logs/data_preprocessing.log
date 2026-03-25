@@ -69,3 +69,53 @@
 2026-03-25 18:58:37,232 - DEBUG - Missing values handled
 2026-03-25 18:58:37,286 - DEBUG - Numerical features scaled
 2026-03-25 18:58:38,264 - DEBUG - Processed data saved successfully
+2026-03-25 19:22:46,036 - DEBUG - Data loaded successfully
+2026-03-25 19:22:46,037 - DEBUG - Starting preprocessing
+2026-03-25 19:22:46,069 - DEBUG - Duplicates removed
+2026-03-25 19:22:46,087 - DEBUG - Missing values handled
+2026-03-25 19:22:46,117 - DEBUG - Numerical features scaled
+2026-03-25 19:22:46,125 - DEBUG - Starting preprocessing
+2026-03-25 19:22:46,133 - DEBUG - Duplicates removed
+2026-03-25 19:22:46,142 - DEBUG - Missing values handled
+2026-03-25 19:22:46,154 - DEBUG - Numerical features scaled
+2026-03-25 19:22:46,922 - DEBUG - Processed data saved successfully
+2026-03-25 19:25:05,637 - DEBUG - Data loaded successfully
+2026-03-25 19:25:05,638 - DEBUG - Starting preprocessing
+2026-03-25 19:25:05,674 - DEBUG - Duplicates removed
+2026-03-25 19:25:05,693 - DEBUG - Missing values handled
+2026-03-25 19:25:05,725 - DEBUG - Numerical features scaled
+2026-03-25 19:25:05,732 - DEBUG - Starting preprocessing
+2026-03-25 19:25:05,740 - DEBUG - Duplicates removed
+2026-03-25 19:25:05,747 - DEBUG - Missing values handled
+2026-03-25 19:25:05,758 - DEBUG - Numerical features scaled
+2026-03-25 19:25:06,852 - DEBUG - Processed data saved successfully
+2026-03-25 19:27:06,682 - DEBUG - Data loaded successfully
+2026-03-25 19:27:06,684 - DEBUG - Starting preprocessing
+2026-03-25 19:27:06,736 - DEBUG - Duplicates removed
+2026-03-25 19:27:06,762 - DEBUG - Missing values handled
+2026-03-25 19:27:06,805 - DEBUG - Numerical features scaled
+2026-03-25 19:27:06,817 - DEBUG - Starting preprocessing
+2026-03-25 19:27:06,834 - DEBUG - Duplicates removed
+2026-03-25 19:27:06,846 - DEBUG - Missing values handled
+2026-03-25 19:27:06,868 - DEBUG - Numerical features scaled
+2026-03-25 19:27:08,452 - DEBUG - Processed data saved successfully
+2026-03-25 19:29:19,825 - DEBUG - Data loaded successfully
+2026-03-25 19:29:19,825 - DEBUG - Starting preprocessing
+2026-03-25 19:29:19,854 - DEBUG - Duplicates removed
+2026-03-25 19:29:19,870 - DEBUG - Missing values handled
+2026-03-25 19:29:19,900 - DEBUG - Numerical features scaled
+2026-03-25 19:29:19,905 - DEBUG - Starting preprocessing
+2026-03-25 19:29:19,920 - DEBUG - Duplicates removed
+2026-03-25 19:29:19,931 - DEBUG - Missing values handled
+2026-03-25 19:29:19,949 - DEBUG - Numerical features scaled
+2026-03-25 19:29:21,210 - DEBUG - Processed data saved successfully
+2026-03-25 19:47:39,572 - DEBUG - Data loaded successfully
+2026-03-25 19:47:39,574 - DEBUG - Starting preprocessing
+2026-03-25 19:47:39,620 - DEBUG - Duplicates removed
+2026-03-25 19:47:39,642 - DEBUG - Missing values handled
+2026-03-25 19:47:39,680 - DEBUG - Numerical features scaled
+2026-03-25 19:47:39,689 - DEBUG - Starting preprocessing
+2026-03-25 19:47:39,707 - DEBUG - Duplicates removed
+2026-03-25 19:47:39,721 - DEBUG - Missing values handled
+2026-03-25 19:47:39,743 - DEBUG - Numerical features scaled
+2026-03-25 19:47:41,227 - DEBUG - Processed data saved successfully

@@ -92,7 +92,7 @@ def evaluate_model(model, X_test, y_test):
         logger.debug(f"Metrics: {metrics}")
         logger.debug(f"Confusion Matrix:\n{cm}")
 
-        print("\n📊 Evaluation Metrics:")
+        print("\n Evaluation Metrics:")
         for k, v in metrics.items():
             print(f"{k}: {v:.4f}")
 
