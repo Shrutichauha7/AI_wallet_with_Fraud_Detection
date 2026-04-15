@@ -1,0 +1,25 @@
+ipykernel
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+scikit-learn
+pymongo
+from_root
+dill
+certifi
+PyYAML
+boto3
+mypy-boto3-s3
+botocore
+
+fastapi==0.95.2
+starlette==0.27.0
+uvicorn==0.22.0
+jinja2==3.0.3
+python-multipart
+
+imblearn
+-e .
+
