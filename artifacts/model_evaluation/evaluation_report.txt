@@ -1,7 +1,0 @@
-New F1 Score: 1.0
-Precision: 1.0
-Recall: 1.0
-ROC-AUC: 1.0
-Old F1 Score: None
-Improvement Score: 1.0
-Accepted: True

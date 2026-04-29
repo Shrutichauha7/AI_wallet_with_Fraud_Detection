@@ -65,8 +65,9 @@ MODEL_TRAINER_EVAL_METRIC: str = "logloss"
 MODEL Evaluation related constants
 """
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
-MODEL_BUCKET_NAME = "my-firstcloud-proj"
-MODEL_PUSHER_S3_KEY = "model-registry"
+MODEL_EVALUATION_DIR_NAME: str = "model_eval"
+MODEL_EVALUATION_DIR_REPORT_NAME: str = "evaluation_report.txt"
+
 
 
 APP_HOST = "0.0.0.0"

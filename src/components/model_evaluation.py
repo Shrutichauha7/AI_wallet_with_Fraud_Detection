@@ -43,7 +43,7 @@ class ModelEvaluation:
                 roc_auc = 0.0
 
             logging.info(
-                f"Metrics → F1: {f1}, Precision: {precision}, Recall: {recall}, ROC-AUC: {roc_auc}"
+                f"Metrics -> F1: {f1}, Precision: {precision}, Recall: {recall}, ROC-AUC: {roc_auc}"
             )
 
             return f1, precision, recall, roc_auc

@@ -62,15 +62,23 @@ class ModelTrainerConfig:
 
 @dataclass
 class ModelEvaluationConfig:
-    changed_threshold_score: float
+    improvement_threshold: float
     best_model_file_path: str
     report_file_path: str
 
     def __init__(self):
-        self.changed_threshold_score = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+        self.improvement_threshold = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+
+       
         self.best_model_file_path = os.path.join(
-            "artifacts", "model_registry", "best_model.pkl"
+            ARTIFACT_DIR,
+            "model_registry",
+            "best_model.pkl"
         )
+
         self.report_file_path = os.path.join(
-            "artifacts", "model_evaluation", "evaluation_report.txt"
+            training_pipeline_config.artifact_dir,
+            MODEL_EVALUATION_DIR_NAME,
+            MODEL_EVALUATION_DIR_REPORT_NAME
         )
+        
