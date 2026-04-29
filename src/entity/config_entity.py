@@ -58,3 +58,19 @@ class ModelTrainerConfig:
     max_depth: int = MODEL_TRAINER_MAX_DEPTH
     random_state: int = MODEL_TRAINER_RANDOM_STATE
     eval_metric: str = MODEL_TRAINER_EVAL_METRIC
+
+
+@dataclass
+class ModelEvaluationConfig:
+    changed_threshold_score: float
+    best_model_file_path: str
+    report_file_path: str
+
+    def __init__(self):
+        self.changed_threshold_score = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+        self.best_model_file_path = os.path.join(
+            "artifacts", "model_registry", "best_model.pkl"
+        )
+        self.report_file_path = os.path.join(
+            "artifacts", "model_evaluation", "evaluation_report.txt"
+        )

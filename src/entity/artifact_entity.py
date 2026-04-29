@@ -28,3 +28,11 @@ class ClassificationMetricArtifact:
 class ModelTrainerArtifact:
     trained_model_file_path:str 
     metric_artifact:ClassificationMetricArtifact
+
+@dataclass
+class ModelEvaluationArtifact:
+    is_model_accepted: bool
+    improvement_score: float
+    best_model_path: str
+    trained_model_path: str
+    report_file_path: str
